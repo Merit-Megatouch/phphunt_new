@@ -1,0 +1,125 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+NetGlob | phphunt_new.so
+WhoWeArePlaying | phphunt_new.so
+GetPackets(char*, int) | phphunt_new.so
+SendPacket(char*) | phphunt_new.so
+GetHelpFileName(char (&) [255], xml_gameinfo::GameIds, Locale::Languages, char const*) | phphunt_new.so
+Heartbeat_Check(int, int) | phphunt_new.so
+Display_TT_Error(char*, int) | phphunt_new.so
+Heartbeat_WaitForAll(unsigned long, bool) | phphunt_new.so
+t_i_l() | phphunt_new.so
+GetMyId() | phphunt_new.so
+QueFlush(bool) | phphunt_new.so
+GetMaster() | phphunt_new.so
+NetGlobals::GetScore(int) | phphunt_new.so
+TextSystem::GetSpriteChannels(char const*, unsigned char**, unsigned char**, int, int, bool, bool, int, float) | phphunt_new.so
+TextSystem::SetTextDescription(TextDesc const&) | phphunt_new.so
+Translator::nTranslate(char*, unsigned int, char const*) | phphunt_new.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | phphunt_new.so
+WorldClass::SetBack(char const*, int) | phphunt_new.so
+WorldClass::DeleteBmp(Bitmap*, unsigned char) | phphunt_new.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | phphunt_new.so
+WorldClass::WorldClass() | phphunt_new.so
+db_gamedata::gamedata_record::gamedata_record(db_gamedata::gamedata_record const&) | phphunt_new.so
+db_gamedata::gamedata_record::gamedata_record() | phphunt_new.so
+db_gamedata::gamedata_record::~gamedata_record() | phphunt_new.so
+system_info::SystemInfo::GetInstance() | phphunt_new.so
+system_info::SystemInfo::IsPlatformGameTime() | phphunt_new.so
+system_info::Get_Motherboard_Type() | phphunt_new.so
+xml_gameinfo::enum_GameIds_tag(xml_gameinfo::GameIds, bool) | libcontent.so
+xml_gamerandom::GameSettingsPhotoHunt_record::AdjustTime(int, long) | phphunt_new.so
+xml_gamerandom::GameSettingsPhotoHunt_record::copy(abstract_record const*) | phphunt_new.so
+xml_gamerandom::GameSettingsPhotoHunt_record::AddChild(abstract_xml_record*, char const*, unsigned int) | phphunt_new.so
+xml_gamerandom::GameSettingsPhotoHunt_record::NewChild(char*) | phphunt_new.so
+xml_gamerandom::GameSettingsPhotoHunt_record::GameSettingsPhotoHunt_record() | phphunt_new.so
+xml_gamerandom::GameSettingsPhotoHunt_record::~GameSettingsPhotoHunt_record() | phphunt_new.so
+RandomizedArrayClass::GetNextValue(int) | phphunt_new.so
+RandomizedArrayClass::RandomizedArrayClass(xml_gamerandom::PICRAND_record*, int, unsigned char, unsigned short*) | phphunt_new.so
+RandomizedArrayClass::~RandomizedArrayClass() | phphunt_new.so
+List::Push(Group*) | phphunt_new.so
+List::Clear(unsigned char) | phphunt_new.so
+List::List(List*) | phphunt_new.so
+Books::Credits(xml_gameinfo::GameIds, enums::Span) | phphunt_new.so
+Books::Instance() | phphunt_new.so
+Group::Signal(Group::SpriteSignalType) | phphunt_new.so
+Group::Signal(SpriteSignal*) | phphunt_new.so
+Group::Message(Group::SpriteSignalType) | phphunt_new.so
+Group::Message(SpriteSignal*) | phphunt_new.so
+USBIO::FoundUSB() | phphunt_new.so
+Bitmap::DeCompress() | phphunt_new.so
+Bitmap::TTFtoCData(unsigned char*, unsigned char*, int, int) | phphunt_new.so
+Bitmap::CopyFromScreen(int, int, bool) | phphunt_new.so
+Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | phphunt_new.so
+Bitmap::CreateColoredTextBoxTTF(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | phphunt_new.so
+Bitmap::Clear() | phphunt_new.so
+Bitmap::GreyBmp() | phphunt_new.so
+Bitmap::Compress(bool, int, unsigned short*) | phphunt_new.so
+Bitmap::LoadJPEG(char*, int, int, unsigned char) | phphunt_new.so
+Colour::black | phphunt_new.so
+Colour::white | phphunt_new.so
+EventO::GetType() | phphunt_new.so
+EventO::EventO() | phphunt_new.so
+EventO::~EventO() | phphunt_new.so
+Sprite::DoNextFrame() | phphunt_new.so
+Sprite::AssignString(String*, unsigned long) | phphunt_new.so
+Sprite::SetHQScaling(bool) | phphunt_new.so
+Sprite::ClicksEnabled | phphunt_new.so
+Sprite::Reset() | phphunt_new.so
+Sprite::DoDraw() | phphunt_new.so
+Sprite::Enable(unsigned long) | phphunt_new.so
+Sprite::SetBmp(Bitmap*, unsigned long) | phphunt_new.so
+Sprite::Signal(Group::SpriteSignalType) | phphunt_new.so
+Sprite::Signal(SpriteSignal*) | phphunt_new.so
+Sprite::Disable(unsigned long, bool) | phphunt_new.so
+Sprite::Message(Group::SpriteSignalType) | phphunt_new.so
+Sprite::Message(SpriteSignal*) | phphunt_new.so
+Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | phphunt_new.so
+Sprite::ScaleXY(float, float, unsigned long) | phphunt_new.so
+Sprite::SetCord(float, float, float, unsigned long) | phphunt_new.so
+Sprite::SetSize(int, int) | phphunt_new.so
+Sprite::DoCommand(int) | phphunt_new.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | phphunt_new.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | phphunt_new.so
+Sprite::~Sprite() | phphunt_new.so
+String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | phphunt_new.so
+Settings::Init() | libcontent.so
+Settings::Init() | phphunt_new.so
+Settings::Load() | libcontent.so
+Settings::Load() | phphunt_new.so
+Settings::Cleanup() | libcontent.so
+Settings::Cleanup() | phphunt_new.so
+Settings::Restore(abstract_xml_record const*) | libcontent.so
+Settings::Restore(abstract_xml_record const*) | phphunt_new.so
+Settings::SaveNow() | libcontent.so
+Settings::Settings(char const*, unsigned int) | libcontent.so
+Settings::Settings(char const*, unsigned int) | phphunt_new.so
+Settings::~Settings() | libcontent.so
+Settings::~Settings() | phphunt_new.so
+TextDesc::SetFontName(char const*) | phphunt_new.so
+GameClass::GameClass() | phphunt_new.so
+GameClass::~GameClass() | phphunt_new.so
+TextUtils::ConvertToMarkup(char const*) | phphunt_new.so
+xml_gamerandom::GameSettingsPhotoHunt_record::ChildCount() const | phphunt_new.so
+xml_gamerandom::GameSettingsPhotoHunt_record::GetChildren() const | phphunt_new.so
+xml_gamerandom::GameSettingsPhotoHunt_record::cTag() const | phphunt_new.so
+xml_gamerandom::GameSettingsPhotoHunt_record::eTag() const | phphunt_new.so
+xml_gamerandom::GameSettingsPhotoHunt_record::clone() const | phphunt_new.so
+xml_gamerandom::GameSettingsPhotoHunt_record::equal(abstract_record const*) const | phphunt_new.so
+xml_gamerandom::GameSettingsPhotoHunt_record::Metadata() const | phphunt_new.so
+xml_gamerandom::GameSettingsPhotoHunt_record::ChildName(int) const | phphunt_new.so
+xml_gamerandom::GameSettingsPhotoHunt_record::not_equal(abstract_record const*) const | phphunt_new.so
+Settings::Key(unsigned int, bool) const | libcontent.so
+Settings::Key(unsigned int, bool) const | phphunt_new.so
+typeinfo for EventO | phphunt_new.so
+typeinfo for Sprite | phphunt_new.so
+typeinfo for Settings | libcontent.so
+typeinfo for Settings | phphunt_new.so
+typeinfo for GameClass | phphunt_new.so
+typeinfo for xml_gamerandom::GameSettingsPhotoHunt_record | phphunt_new.so
+vtable for DOSLinuxWorld | phphunt_new.so
+clear_bitmap | phphunt_new.so
+gfx_driver | phphunt_new.so
+screen | phphunt_new.so
