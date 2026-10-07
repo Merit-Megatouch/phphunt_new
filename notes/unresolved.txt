@@ -2,8 +2,6 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-SendPacket(char*) | phphunt_new.so
-GetHelpFileName(char (&) [255], xml_gameinfo::GameIds, Locale::Languages, char const*) | phphunt_new.so
 Display_TT_Error(char*, int) | phphunt_new.so
 t_i_l() | phphunt_new.so
 NetGlobals::GetScore(int) | phphunt_new.so
