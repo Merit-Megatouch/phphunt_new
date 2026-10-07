@@ -5,15 +5,6 @@
 SendPacket(char*) | phphunt_new.so
 GetHelpFileName(char (&) [255], xml_gameinfo::GameIds, Locale::Languages, char const*) | phphunt_new.so
 Display_TT_Error(char*, int) | phphunt_new.so
-Heartbeat_WaitForAll(unsigned long, bool) | phphunt_new.so
 t_i_l() | phphunt_new.so
 NetGlobals::GetScore(int) | phphunt_new.so
-TextSystem::GetSpriteChannels(char const*, unsigned char**, unsigned char**, int, int, bool, bool, int, float) | phphunt_new.so
-TextSystem::SetTextDescription(TextDesc const&) | phphunt_new.so
 USBIO::FoundUSB() | phphunt_new.so
-Colour::black | phphunt_new.so
-Colour::white | phphunt_new.so
-TextDesc::SetFontName(char const*) | phphunt_new.so
-GameClass::GameClass() | phphunt_new.so
-GameClass::~GameClass() | phphunt_new.so
-typeinfo for GameClass | phphunt_new.so
